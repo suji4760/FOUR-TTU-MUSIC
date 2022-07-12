@@ -382,8 +382,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							var $ytFrame = $(e);
 							var ytKey; var tmp = $ytFrame.attr('src').split(/\//); tmp = tmp[tmp.length - 1]; tmp = tmp.split('?'); ytKey = tmp[0];
 							var $ytLoader = $('<div class="ytLoader">');
-							$ytLoader.append($('<img class="cover" src="https://i.ytimg.com/vi/'+ytKey+'/hqdefault.jpg">'));
-							$ytLoader.append($('<img class="playBtn" src=""C:\Users\kdg35\Downloads\play_button.jpg"">'));
+							$ytLoader.append($('<img class="cover" style="margin-left: auto; margin-right: auto; display: block;" src="https://i.ytimg.com/vi/'+ytKey+'/hqdefault.jpg">'));
+							$ytLoader.append($('<img class="playBtn" style="margin-left: auto; margin-right: auto; display: block;" src=""C:\Users\kdg35\Downloads\play_button.jpg"">'));
 							$ytLoader.data('$ytFrame',$ytFrame);
 							$ytFrame.replaceWith($ytLoader);
 							$ytLoader.click(function () {
